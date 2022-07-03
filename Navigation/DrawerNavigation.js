@@ -1,15 +1,15 @@
 import React from 'react';
-import  { createDrawerNavigation } from '@react-navigation/drawer';
+import  { createDrawerNavigator } from '@react-navigation/drawer';
 
 import TabNavigation from './TabNavigation';
 import Profile from '../Screens/Profile';
 
-const Drawer = createDrawerNavigation();
+const Drawer = createDrawerNavigator();
 
 const DrawerNavigation = () => {
     return(
         <Drawer.Navigator>
-            <Drawer.Screen name="TabNav" component={TabNavigation}/>
+            <Drawer.Screen name="More" component={TabNavigation}/>
             <Drawer.Screen name="Profile" component={Profile}/>
         </Drawer.Navigator>
     )
